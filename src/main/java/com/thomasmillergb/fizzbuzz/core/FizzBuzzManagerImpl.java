@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+//Remove Public as the bean should be injected with the interface type
+//Prevents addtional objects being created outside of the package
+//By abstracting the manager and the core logic this allow it to be more configurable and testable
 @Component
 class FizzBuzzManagerImpl implements FizzBuzzManager {
 
@@ -17,7 +20,7 @@ class FizzBuzzManagerImpl implements FizzBuzzManager {
         fizzBuzzCommand_ = fizzBuzzCommand;
     }
 
-    public void setFizzBuzzCases(List<FizzBuzzCase> fizzBuzzCases) {
+    void setFizzBuzzCases(List<FizzBuzzCase> fizzBuzzCases) {
         fizzBuzzCases_ = fizzBuzzCases;
     }
 

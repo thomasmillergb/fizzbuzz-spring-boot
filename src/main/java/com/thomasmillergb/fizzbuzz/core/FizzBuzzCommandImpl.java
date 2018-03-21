@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * this solution to fizzbuzz means there is no duplicate logic and that the solution is expandable to addtional predicates
+ */
 @Component
 class FizzBuzzCommandImpl implements FizzBuzzCommand {
     @Override

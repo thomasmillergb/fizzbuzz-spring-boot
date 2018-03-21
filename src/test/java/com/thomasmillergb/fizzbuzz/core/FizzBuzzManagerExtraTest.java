@@ -6,6 +6,9 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
+/**
+ * Addtional tests for fun
+ */
 public class FizzBuzzManagerExtraTest extends AbstractFizzBuzzApplicationTests {
 
     @Autowired

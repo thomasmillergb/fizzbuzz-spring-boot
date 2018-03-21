@@ -13,6 +13,7 @@ import java.util.ArrayList;
 /**
  * I have custom beans to allow for different input for example extra 10
  * Since this is all DI it has allowed it to be lossy coupled
+ * This could also ahve been done in XML
  */
 @Configuration
 class FizzBuzzManagerConfig {
